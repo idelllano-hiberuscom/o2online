@@ -143,6 +143,10 @@
   },
   {
     "id": "features",
+    "fields": []
+  },
+  {
+    "id": "features-item",
     "fields": [
       {
         "component": "reference",
@@ -151,19 +155,16 @@
         "multi": false
       },
       {
-        "component": "text",
-        "name": "iconAlt",
-        "label": "Icon Alt Text"
-      },
-      {
         "component": "richtext",
         "name": "title",
-        "label": "Title"
+        "label": "Title",
+        "valueType": "string"
       },
       {
         "component": "richtext",
         "name": "description",
-        "label": "Description"
+        "label": "Description",
+        "valueType": "string"
       }
     ]
   },
@@ -179,67 +180,77 @@
       {
         "component": "text",
         "name": "imageAlt",
-        "label": "Image Alt Text"
+        "label": "Image Alt Text",
+        "valueType": "string"
       },
       {
         "component": "text",
         "name": "subtitle",
-        "label": "Subtitle"
+        "label": "Subtitle",
+        "valueType": "string"
       },
       {
         "component": "text",
         "name": "title",
-        "label": "Title"
-      },
-      {
-        "component": "text",
-        "name": "ctaLabel",
-        "label": "CTA Label"
+        "label": "Title",
+        "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "ctaUrl",
-        "label": "CTA Link"
+        "name": "cta",
+        "label": "CTA Link",
+        "valueType": "string"
       }
     ]
   },
   {
     "id": "pricing-cards",
+    "fields": []
+  },
+  {
+    "id": "pricing-card-item",
     "fields": [
       {
         "component": "richtext",
         "name": "specs",
-        "label": "Specs"
+        "label": "Specs",
+        "valueType": "string"
       },
       {
         "component": "text",
         "name": "price",
-        "label": "Price"
+        "label": "Price",
+        "valueType": "string"
       },
       {
         "component": "text",
-        "name": "priceLabel",
-        "label": "Price Label"
+        "name": "price-label",
+        "label": "Price Label",
+        "valueType": "string"
       },
       {
         "component": "text",
-        "name": "primaryCtaLabel",
-        "label": "Primary CTA Label"
+        "name": "primary-cta-label",
+        "label": "Primary CTA Label",
+        "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "primaryCtaUrl",
-        "label": "Primary CTA Link"
+        "name": "primary-cta-url",
+        "label": "Primary CTA Link",
+        "valueType": "string"
       },
       {
         "component": "text",
-        "name": "secondaryCtaLabel",
-        "label": "Secondary CTA Label"
+        "name": "secondary-cta-label",
+        "label": "Secondary CTA Label",
+        "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "secondaryCtaUrl",
-        "label": "Secondary CTA Link"
+        "name": "secondary-cta-url",
+        "label": "Secondary CTA Link",
+        "valueType": "string"
       }
     ]
   },
@@ -255,63 +266,59 @@
       {
         "component": "text",
         "name": "iconAlt",
-        "label": "Icon Alt Text"
+        "label": "Icon Alt Text",
+        "valueType": "string"
       },
       {
         "component": "text",
         "name": "text",
-        "label": "Banner Text"
-      },
-      {
-        "component": "text",
-        "name": "ctaLabel",
-        "label": "CTA Label"
+        "label": "Banner Text",
+        "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "ctaUrl",
-        "label": "CTA Link"
+        "name": "cta",
+        "label": "CTA Link",
+        "valueType": "string"
       }
     ]
   },
   {
     "id": "promo-cards",
+    "fields": []
+  },
+  {
+    "id": "promo-card-item",
     "fields": [
       {
         "component": "reference",
-        "name": "backgroundImage",
+        "name": "background-image",
         "label": "Background Image",
         "multi": false
       },
       {
         "component": "text",
-        "name": "imageAlt",
-        "label": "Image Alt Text"
-      },
-      {
-        "component": "text",
         "name": "badge",
-        "label": "Badge Text"
+        "label": "Badge Text",
+        "valueType": "string"
       },
       {
         "component": "text",
         "name": "title",
-        "label": "Title"
+        "label": "Title",
+        "valueType": "string"
       },
       {
         "component": "text",
         "name": "date",
-        "label": "Date"
-      },
-      {
-        "component": "text",
-        "name": "ctaLabel",
-        "label": "CTA Label"
+        "label": "Date",
+        "valueType": "string"
       },
       {
         "component": "aem-content",
-        "name": "ctaUrl",
-        "label": "CTA Link"
+        "name": "cta",
+        "label": "CTA Link",
+        "valueType": "string"
       }
     ]
   }

@@ -29,22 +29,20 @@
         {
           "component": "text",
           "name": "iconAlt",
-          "label": "Icon Alt Text"
+          "label": "Icon Alt Text",
+          "valueType": "string"
         },
         {
           "component": "text",
           "name": "text",
-          "label": "Banner Text"
-        },
-        {
-          "component": "text",
-          "name": "ctaLabel",
-          "label": "CTA Label"
+          "label": "Banner Text",
+          "valueType": "string"
         },
         {
           "component": "aem-content",
-          "name": "ctaUrl",
-          "label": "CTA Link"
+          "name": "cta",
+          "label": "CTA Link",
+          "valueType": "string"
         }
       ]
     }

@@ -14,47 +14,80 @@
           }
         }
       }
+    },
+    {
+      "title": "Pricing Card Item",
+      "id": "pricing-card-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "model": "pricing-card-item"
+            }
+          }
+        }
+      }
     }
   ],
   "models": [
     {
       "id": "pricing-cards",
+      "fields": []
+    },
+    {
+      "id": "pricing-card-item",
       "fields": [
         {
           "component": "richtext",
           "name": "specs",
-          "label": "Specs"
+          "label": "Specs",
+          "valueType": "string"
         },
         {
           "component": "text",
           "name": "price",
-          "label": "Price"
+          "label": "Price",
+          "valueType": "string"
         },
         {
           "component": "text",
-          "name": "priceLabel",
-          "label": "Price Label"
+          "name": "price-label",
+          "label": "Price Label",
+          "valueType": "string"
         },
         {
           "component": "text",
-          "name": "primaryCtaLabel",
-          "label": "Primary CTA Label"
+          "name": "primary-cta-label",
+          "label": "Primary CTA Label",
+          "valueType": "string"
         },
         {
           "component": "aem-content",
-          "name": "primaryCtaUrl",
-          "label": "Primary CTA Link"
+          "name": "primary-cta-url",
+          "label": "Primary CTA Link",
+          "valueType": "string"
         },
         {
           "component": "text",
-          "name": "secondaryCtaLabel",
-          "label": "Secondary CTA Label"
+          "name": "secondary-cta-label",
+          "label": "Secondary CTA Label",
+          "valueType": "string"
         },
         {
           "component": "aem-content",
-          "name": "secondaryCtaUrl",
-          "label": "Secondary CTA Link"
+          "name": "secondary-cta-url",
+          "label": "Secondary CTA Link",
+          "valueType": "string"
         }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "pricing-cards",
+      "components": [
+        "pricing-card-item"
       ]
     }
   ]
