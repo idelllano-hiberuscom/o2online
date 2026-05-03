@@ -147,20 +147,15 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "icon",
-        "label": "Icon",
+        "name": "image",
+        "label": "Image",
         "multi": false
       },
       {
         "component": "richtext",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "description",
-        "label": "Description",
+        "name": "text",
+        "value": "",
+        "label": "Text",
         "valueType": "string"
       }
     ]
@@ -170,7 +165,6 @@
     "fields": [
       {
         "component": "reference",
-        "valueType": "string",
         "name": "image",
         "label": "Background Image",
         "multi": false
@@ -253,7 +247,6 @@
     "fields": [
       {
         "component": "reference",
-        "valueType": "string",
         "name": "icon",
         "label": "Icon",
         "multi": false
@@ -284,32 +277,15 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "background-image",
-        "label": "Background Image",
+        "name": "image",
+        "label": "Image",
         "multi": false
       },
       {
-        "component": "text",
-        "name": "badge",
-        "label": "Badge Text",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "title",
-        "label": "Title",
-        "valueType": "string"
-      },
-      {
-        "component": "text",
-        "name": "date",
-        "label": "Date",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "cta",
-        "label": "CTA Link",
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
         "valueType": "string"
       }
     ]
