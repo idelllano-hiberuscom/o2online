@@ -1,48 +1,33 @@
 export default function decorate(block) {
-  const rows = [...block.children];
-  block.textContent = '';
+  [...block.children].forEach((row) => {
+    row.classList.add('promo-card');
 
-  rows.forEach((row) => {
     const cols = [...row.children];
-    const card = document.createElement('div');
-    card.className = 'promo-card';
 
     const imgCol = cols[0];
     if (imgCol) {
-      const pic = imgCol.querySelector('picture');
       const img = imgCol.querySelector('img');
       if (img) {
-        card.style.backgroundImage = `url(${img.src})`;
+        row.style.backgroundImage = `url(${img.src})`;
+        imgCol.hidden = true;
       }
-      if (pic) pic.remove();
-      else if (img) img.remove();
     }
 
     const badgeCol = cols[1];
     if (badgeCol) {
-      const badge = document.createElement('span');
-      badge.className = 'promo-card-badge';
-      badge.innerHTML = badgeCol.innerHTML;
-      card.appendChild(badge);
+      badgeCol.classList.add('promo-card-badge');
     }
 
     const titleCol = cols[2];
     if (titleCol) {
-      const title = document.createElement('p');
-      title.className = 'promo-card-title';
-      title.innerHTML = titleCol.innerHTML;
-      card.appendChild(title);
+      titleCol.classList.add('promo-card-title');
     }
 
     const ctaCol = cols[3];
     if (ctaCol) {
       const a = ctaCol.querySelector('a');
-      if (a) {
-        a.classList.add('promo-card-link');
-        card.appendChild(a);
-      }
+      if (a) a.classList.add('promo-card-link');
+      ctaCol.classList.add('promo-card-cta');
     }
-
-    block.appendChild(card);
   });
 }
