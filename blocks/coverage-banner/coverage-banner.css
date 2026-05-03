@@ -1,0 +1,37 @@
+.coverage-banner-wrapper {
+  padding: 0;
+}
+
+.coverage-banner {
+  background: linear-gradient(135deg, #0050ff 0%, #003ecb 100%);
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.coverage-banner .coverage-banner-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.coverage-banner .coverage-banner-content p {
+  font-family: OnAir-Light, Arial, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 24px;
+}
+
+.coverage-banner .coverage-cta {
+  display: inline-block;
+  background-color: #fff;
+  color: #0050ff;
+  border-radius: 60px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.coverage-banner .coverage-cta:hover {
+  background-color: #f0f5ff;
+}

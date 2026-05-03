@@ -1,0 +1,76 @@
+.app-promo-wrapper {
+  padding: 40px 0;
+}
+
+.app-promo {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.app-promo .app-promo-text {
+  flex: 1;
+}
+
+.app-promo .app-promo-text h2 {
+  font-family: OnAir-Regular, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 16px;
+}
+
+.app-promo .app-promo-description {
+  font-family: OnAir-Light, Arial, sans-serif;
+  font-size: 18px;
+  color: #4a4a4a;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.app-promo .app-promo-description ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.app-promo .app-promo-description li {
+  padding: 4px 0;
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+.app-promo .app-promo-description li::before {
+  content: '✓ ';
+  color: #0050ff;
+}
+
+.app-promo .app-promo-badges {
+  display: flex;
+  gap: 12px;
+}
+
+.app-promo .badge-link img {
+  height: 40px;
+  width: auto;
+}
+
+.app-promo .app-promo-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.app-promo .app-promo-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (width <= 768px) {
+  .app-promo {
+    flex-direction: column;
+  }
+}

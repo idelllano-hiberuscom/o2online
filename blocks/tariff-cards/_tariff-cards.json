@@ -1,0 +1,88 @@
+{
+  "definitions": [
+    {
+      "title": "Tariff Cards",
+      "id": "tariff-cards",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Tariff Cards",
+              "filter": "tariff-cards"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "item-definitions": [
+    {
+      "title": "Tariff Card",
+      "id": "tariff-cards-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Tariff Card",
+              "model": "tariff-cards-item"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "tariff-cards-item",
+      "fields": [
+        {
+          "component": "text",
+          "name": "planName",
+          "label": "Plan Name"
+        },
+        {
+          "component": "text",
+          "name": "speed",
+          "label": "Speed (e.g. 600MB)"
+        },
+        {
+          "component": "text",
+          "name": "data",
+          "label": "Data (e.g. 60GB)"
+        },
+        {
+          "component": "text",
+          "name": "price",
+          "label": "Price (e.g. 35)"
+        },
+        {
+          "component": "text",
+          "name": "priceLabel",
+          "label": "Price Label (e.g. €/mes)"
+        },
+        {
+          "component": "aem-content",
+          "name": "ctaPrimary",
+          "label": "Primary CTA",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "ctaSecondary",
+          "label": "Secondary CTA",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "tariff-cards",
+      "components": [
+        "tariff-cards-item"
+      ]
+    }
+  ]
+}

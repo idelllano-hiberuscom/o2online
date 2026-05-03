@@ -1,0 +1,52 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "fragment",
+      "tariff-cards",
+      "coverage-banner",
+      "discover-grid",
+      "features",
+      "app-promo",
+      "advantages",
+      "contact-strip"
+    ]
+  },
+  {
+    "id": "advantages",
+    "components": [
+      "advantages-item"
+    ]
+  },
+  {
+    "id": "discover-grid",
+    "components": [
+      "discover-grid-item"
+    ]
+  },
+  {
+    "id": "features",
+    "components": [
+      "features-item"
+    ]
+  },
+  {
+    "id": "tariff-cards",
+    "components": [
+      "tariff-cards-item"
+    ]
+  }
+]

@@ -1,0 +1,31 @@
+.contact-strip-wrapper {
+  padding: 0;
+}
+
+.contact-strip {
+  background-color: #f9f9f9;
+  padding: 32px 15px;
+  text-align: center;
+}
+
+.contact-strip .contact-strip-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-strip .contact-strip-content p {
+  font-family: OnAir-Light, Arial, sans-serif;
+  font-size: 18px;
+  color: #4a4a4a;
+  margin: 0 0 12px;
+}
+
+.contact-strip .contact-link {
+  color: #0050ff;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.contact-strip .contact-link:hover {
+  text-decoration: none;
+}
