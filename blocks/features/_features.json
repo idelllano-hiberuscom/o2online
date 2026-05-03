@@ -38,10 +38,11 @@
       "id": "features-item",
       "fields": [
         {
-          "component": "text",
+          "component": "reference",
+          "valueType": "string",
           "name": "image",
           "label": "Image",
-          "valueType": "string"
+          "multi": false
         },
         {
           "component": "richtext",
