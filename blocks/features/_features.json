@@ -40,20 +40,15 @@
         {
           "component": "reference",
           "valueType": "string",
-          "name": "icon",
-          "label": "Icon",
+          "name": "image",
+          "label": "Image",
           "multi": false
         },
         {
           "component": "richtext",
-          "name": "title",
-          "label": "Title",
-          "valueType": "string"
-        },
-        {
-          "component": "richtext",
-          "name": "description",
-          "label": "Description",
+          "name": "text",
+          "value": "",
+          "label": "Text",
           "valueType": "string"
         }
       ]
