@@ -4,18 +4,47 @@
 }
 
 .promo-banner {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  padding: var(--spacing-md) var(--spacing-md);
+  background-color: var(--color-primary, #1400ff);
+  color: var(--color-white, #fff);
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
 }
 
 .promo-banner .promo-banner-content {
-  max-width: var(--max-width);
+  max-width: var(--max-width, 1200px);
   margin: 0 auto;
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  justify-content: center;
+  gap: 16px;
   flex-wrap: wrap;
+}
+
+.promo-banner .promo-banner-icon {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.promo-banner .promo-banner-icon .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.promo-banner .promo-banner-icon .icon img,
+.promo-banner .promo-banner-icon .icon svg {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.promo-banner .promo-banner-icon img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1);
 }
 
 .promo-banner .promo-banner-text {
@@ -25,26 +54,41 @@
 
 .promo-banner .promo-banner-text p {
   margin: 0;
-  font-size: var(--body-font-size-m);
+  font-size: 16px;
+  font-weight: var(--font-weight-regular, 400);
+  color: var(--color-white, #fff);
 }
 
-.promo-banner .promo-banner-image {
+.promo-banner .promo-banner-cta {
   flex: 0 0 auto;
 }
 
-.promo-banner .promo-banner-image img {
-  max-height: 80px;
-  width: auto;
+.promo-banner .promo-banner-cta .button.pill {
+  display: inline-block;
+  background-color: var(--color-white, #fff);
+  color: var(--color-primary, #1400ff);
+  border: none;
+  border-radius: var(--border-radius-pill, 999px);
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold, 700);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s;
 }
 
-.promo-banner .icon {
-  width: 32px;
-  height: 32px;
-  margin-right: var(--spacing-sm);
+.promo-banner .promo-banner-cta .button.pill:hover {
+  background-color: #f0f0f0;
 }
 
 @media (width < 768px) {
-  .promo-banner .promo-banner-image {
-    display: none;
+  .promo-banner .promo-banner-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .promo-banner .promo-banner-text {
+    min-width: unset;
+    flex-basis: 100%;
   }
 }

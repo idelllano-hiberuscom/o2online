@@ -37,19 +37,12 @@
           "component": "text",
           "valueType": "string",
           "name": "linkText",
-          "label": "Link Text"
+          "label": "CTA Label"
         },
         {
           "component": "aem-content",
           "name": "linkUrl",
-          "label": "Link URL"
-        },
-        {
-          "component": "reference",
-          "valueType": "string",
-          "name": "image",
-          "label": "Image (optional)",
-          "multi": false
+          "label": "CTA URL"
         }
       ]
     }

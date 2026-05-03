@@ -13,13 +13,6 @@
       "button",
       "title",
       "hero",
-      "tabs",
-      "tariff-cards",
-      "promo-banner",
-      "cta-banner",
-      "carousel",
-      "features",
-      "advantages",
       "cards",
       "columns",
       "fragment"
@@ -62,6 +55,12 @@
     "id": "features",
     "components": [
       "feature-item"
+    ]
+  },
+  {
+    "id": "pricing-cards",
+    "components": [
+      "pricing-card"
     ]
   },
   {
