@@ -98,6 +98,20 @@
           }
         },
         {
+          "title": "Features Item",
+          "id": "features-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "model": "features-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Hero",
           "id": "hero",
           "plugins": {
@@ -128,6 +142,20 @@
           }
         },
         {
+          "title": "Pricing Card Item",
+          "id": "pricing-card-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "model": "pricing-card-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Promo Banner",
           "id": "promo-banner",
           "plugins": {
@@ -152,6 +180,20 @@
                 "template": {
                   "name": "Promo Cards",
                   "model": "promo-cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Promo Card Item",
+          "id": "promo-card-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "model": "promo-card-item"
                 }
               }
             }
