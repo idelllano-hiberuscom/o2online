@@ -4,5 +4,76 @@
     "components": [
       "section"
     ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "tabs",
+      "tariff-cards",
+      "promo-banner",
+      "cta-banner",
+      "carousel",
+      "features",
+      "advantages",
+      "cards",
+      "columns",
+      "fragment"
+    ]
+  },
+  {
+    "id": "advantages",
+    "components": [
+      "advantage-item"
+    ]
+  },
+  {
+    "id": "cards",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "carousel",
+    "components": [
+      "carousel-item"
+    ]
+  },
+  {
+    "id": "columns",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
+    ]
+  },
+  {
+    "id": "features",
+    "components": [
+      "feature-item"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tab-item"
+    ]
+  },
+  {
+    "id": "tariff-cards",
+    "components": [
+      "tariff-card"
+    ]
   }
 ]
