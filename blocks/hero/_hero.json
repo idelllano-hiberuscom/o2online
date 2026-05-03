@@ -29,27 +29,26 @@
         {
           "component": "text",
           "name": "imageAlt",
-          "label": "Image Alt Text"
+          "label": "Image Alt Text",
+          "valueType": "string"
         },
         {
           "component": "text",
           "name": "subtitle",
-          "label": "Subtitle"
+          "label": "Subtitle",
+          "valueType": "string"
         },
         {
           "component": "text",
           "name": "title",
-          "label": "Title"
-        },
-        {
-          "component": "text",
-          "name": "ctaLabel",
-          "label": "CTA Label"
+          "label": "Title",
+          "valueType": "string"
         },
         {
           "component": "aem-content",
-          "name": "ctaUrl",
-          "label": "CTA Link"
+          "name": "cta",
+          "label": "CTA Link",
+          "valueType": "string"
         }
       ]
     }

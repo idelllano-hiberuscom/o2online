@@ -14,11 +14,29 @@
           }
         }
       }
+    },
+    {
+      "title": "Features Item",
+      "id": "features-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "model": "features-item"
+            }
+          }
+        }
+      }
     }
   ],
   "models": [
     {
       "id": "features",
+      "fields": []
+    },
+    {
+      "id": "features-item",
       "fields": [
         {
           "component": "reference",
@@ -27,20 +45,25 @@
           "multi": false
         },
         {
-          "component": "text",
-          "name": "iconAlt",
-          "label": "Icon Alt Text"
-        },
-        {
           "component": "richtext",
           "name": "title",
-          "label": "Title"
+          "label": "Title",
+          "valueType": "string"
         },
         {
           "component": "richtext",
           "name": "description",
-          "label": "Description"
+          "label": "Description",
+          "valueType": "string"
         }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "features",
+      "components": [
+        "features-item"
       ]
     }
   ]
