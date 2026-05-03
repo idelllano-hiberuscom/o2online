@@ -1,36 +1,90 @@
-/* stylelint-disable max-line-length */
+/*
+ * O2 Brand Typography
+ * Font: OnAir (O2 proprietary) — served via Roboto as local fallback
+ * Original weights: Light (300), Regular (400), Bold (700), Black (900)
+ * Source: https://web.static.o2online.es/fonts/
+ */
+
+/* OnAir Light — body text default */
 @font-face {
-  font-family: roboto-condensed;
+  font-family: OnAir-Light;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   font-display: swap;
-  src: url('../fonts/roboto-condensed-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url('../fonts/roboto-regular.woff2') format('woff2');
 }
 
+/* OnAir Regular — buttons, navigation, h1 */
 @font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('../fonts/roboto-bold.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('../fonts/roboto-medium.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-@font-face {
-  font-family: roboto;
+  font-family: OnAir-Regular;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url('../fonts/roboto-regular.woff2') format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* OnAir Bold — price emphasis, strong text */
+@font-face {
+  font-family: OnAir-Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/roboto-bold.woff2') format('woff2');
+}
+
+/* OnAir Black — large headings (h2) */
+@font-face {
+  font-family: OnAir-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/roboto-condensed-bold.woff2') format('woff2');
+}
+
+/* Unified font-family alias for EDS usage */
+@font-face {
+  font-family: 'On Air';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/roboto-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'On Air';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/roboto-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'On Air';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/roboto-medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'On Air';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/roboto-bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'On Air';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/roboto-condensed-bold.woff2') format('woff2');
+}
+
+/* System fallback font metrics adjustment */
+@font-face {
+  font-family: onair-fallback;
+  size-adjust: 99.5%;
+  src: local('Arial');
 }
