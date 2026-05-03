@@ -39,6 +39,7 @@
       "fields": [
         {
           "component": "reference",
+          "valueType": "string",
           "name": "icon",
           "label": "Icon",
           "multi": false

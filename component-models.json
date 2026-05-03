@@ -146,6 +146,7 @@
     "fields": [
       {
         "component": "reference",
+        "valueType": "string",
         "name": "icon",
         "label": "Icon",
         "multi": false
@@ -169,6 +170,7 @@
     "fields": [
       {
         "component": "reference",
+        "valueType": "string",
         "name": "image",
         "label": "Background Image",
         "multi": false
@@ -251,6 +253,7 @@
     "fields": [
       {
         "component": "reference",
+        "valueType": "string",
         "name": "icon",
         "label": "Icon",
         "multi": false
@@ -280,6 +283,7 @@
     "fields": [
       {
         "component": "reference",
+        "valueType": "string",
         "name": "background-image",
         "label": "Background Image",
         "multi": false
