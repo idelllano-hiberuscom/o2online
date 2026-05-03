@@ -5,21 +5,21 @@ export default function decorate(block) {
   grid.classList.add('features-grid');
 
   [...block.children].forEach((row) => {
-    const item = document.createElement('div');
-    item.classList.add('features-item');
-    moveInstrumentation(row, item);
+    const card = document.createElement('div');
+    card.classList.add('features-card');
+    moveInstrumentation(row, card);
 
     const cells = [...row.children];
     cells.forEach((cell) => {
       if (cell.querySelector('.icon') || cell.querySelector('picture')) {
-        cell.classList.add('features-item-icon');
+        cell.classList.add('features-card-icon');
       } else {
-        cell.classList.add('features-item-text');
+        cell.classList.add('features-card-text');
       }
-      item.append(cell);
+      card.append(cell);
     });
 
-    grid.append(item);
+    grid.append(card);
   });
 
   block.replaceChildren(grid);
