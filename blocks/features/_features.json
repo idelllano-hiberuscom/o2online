@@ -14,7 +14,9 @@
           }
         }
       }
-    },
+    }
+  ],
+  "item-definitions": [
     {
       "title": "Features Item",
       "id": "features-item",
