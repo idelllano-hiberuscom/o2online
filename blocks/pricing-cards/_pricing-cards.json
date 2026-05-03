@@ -14,7 +14,9 @@
           }
         }
       }
-    },
+    }
+  ],
+  "item-definitions": [
     {
       "title": "Pricing Card Item",
       "id": "pricing-card-item",

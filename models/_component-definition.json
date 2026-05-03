@@ -35,6 +35,15 @@
           "...": "../blocks/*/_*.json#/definitions"
         }
       ]
+    },
+    {
+      "title": "Block Items",
+      "id": "block-items",
+      "components": [
+        {
+          "...": "../blocks/*/_*.json#/item-definitions"
+        }
+      ]
     }
   ]
 }

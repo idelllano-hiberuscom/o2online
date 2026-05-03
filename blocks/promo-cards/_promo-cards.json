@@ -14,7 +14,9 @@
           }
         }
       }
-    },
+    }
+  ],
+  "item-definitions": [
     {
       "title": "Promo Card Item",
       "id": "promo-card-item",
