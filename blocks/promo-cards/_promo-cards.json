@@ -38,16 +38,14 @@
       "id": "promo-card-item",
       "fields": [
         {
-          "component": "reference",
-          "valueType": "string",
+          "component": "text",
           "name": "image",
           "label": "Image",
-          "multi": false
+          "valueType": "string"
         },
         {
           "component": "richtext",
           "name": "text",
-          "value": "",
           "label": "Text",
           "valueType": "string"
         }
