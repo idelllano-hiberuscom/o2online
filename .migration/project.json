@@ -1,0 +1,9 @@
+{
+  "baseUrl": "https://o2online.es",
+  "type": "xwalk",
+  "contentHostUrl": "author-p34633-e913315.adobeaemcloud.com",
+  "aemSitePath": "/content/o2online",
+  "aemAssetsFolderPath": "/content/dam/o2online",
+  "aemSiteName": "o2online",
+  "aemSiteTitle": "o2online"
+}

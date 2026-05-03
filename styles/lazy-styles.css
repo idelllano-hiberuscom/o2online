@@ -1,1 +1,149 @@
-/* add global styles that can be loaded post LCP here */
+/* Non-critical styles — loaded after LCP */
+
+/* === SCROLL ANIMATIONS === */
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === HOVER & INTERACTION STATES === */
+
+a.button:any-link:active,
+button:active {
+  transform: scale(0.97);
+}
+
+a.button.secondary:hover {
+  border-color: var(--color-primary);
+}
+
+/* Card hover effects */
+.tariff-cards .tariff-card:hover,
+.carousel .carousel-slide:hover {
+  box-shadow: var(--shadow-l);
+  transform: translateY(-2px);
+  transition: box-shadow var(--transition-default), transform var(--transition-default);
+}
+
+/* Tab active indicator animation */
+.tabs .tabs-tab::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform var(--transition-default);
+}
+
+.tabs .tabs-tab.active::after {
+  transform: scaleX(1);
+}
+
+/* Navigation hover */
+header nav a:any-link {
+  transition: color var(--transition-fast);
+}
+
+/* Icon hover glow */
+.features .features-item:hover .features-item-icon .icon,
+.advantages .advantages-item:hover .advantages-item-icon .icon {
+  transform: scale(1.1);
+  transition: transform var(--transition-default);
+}
+
+/* CTA Banner button pulse on idle */
+.cta-banner .button {
+  transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-default);
+}
+
+.cta-banner .button:hover {
+  box-shadow: 0 4px 16px rgb(0 80 255 / 30%);
+}
+
+/* Footer link underline animation */
+footer .footer a:any-link {
+  position: relative;
+}
+
+footer .footer a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentcolor;
+  transition: width var(--transition-default);
+}
+
+footer .footer a:hover::after {
+  width: 100%;
+}
+
+/* Hero content entrance */
+.hero .hero-content {
+  animation: fade-in-up 0.6s ease-out;
+}
+
+/* Smooth section reveal */
+main > .section {
+  animation: fade-in 0.4s ease-out;
+}
+
+/* Carousel scroll snapping smoothness */
+.carousel .carousel-track {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible styles for accessibility */
+:where(a):focus-visible,
+:where(button):focus-visible,
+:where(input):focus-visible,
+:where(select):focus-visible,
+:where(textarea):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
+  }
+}

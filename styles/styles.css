@@ -1,88 +1,145 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
+ * O2 España Design System — Edge Delivery Services
+ * Extracted from https://www.o2online.es (2026-05-03)
  *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
+ * Font: OnAir (Light/Regular/Bold/Black)
+ * Primary: #0050FF (O2 Blue)
+ * Layout: 1350px max-width, mobile-first
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* Colors */
+  --color-primary: #0050FF;
+  --color-primary-dark: #003ACC;
+  --color-secondary: #000;
+  --color-accent: #FFD359;
+  --color-background: #FFF;
+  --color-background-dark: #0050FF;
+  --color-background-light: #F8F8F8;
+  --color-background-alt: #F5F5F7;
+  --color-text: #4A4A4A;
+  --color-text-dark: #3C3C46;
+  --color-text-light: #696969;
+  --color-text-inverted: #FFF;
+  --color-link: #0050FF;
+  --color-link-hover: #003ACC;
+  --color-border: #E0E0E0;
+  --color-error: #DC3545;
+  --color-success: #28A745;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* Typography */
+  --font-family-primary: 'On Air', onair-light, arial, sans-serif;
+  --font-family-heading: 'On Air', onair-black, arial, sans-serif;
+  --font-family-body: 'On Air', onair-light, arial, sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 28px;
+  --font-size-xxxl: 40px;
+  --font-size-price: 32px;
+  --line-height-default: 1.44;
+  --line-height-heading: 1.2;
+  --line-height-tight: 1.25;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-s: 10px;
+  --spacing-m: 15px;
+  --spacing-l: 24px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 50px;
+  --spacing-xxxl: 80px;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
-
-  /* nav height */
+  /* Layout */
+  --grid-max-width: 1350px;
+  --grid-gutter: 15px;
+  --section-padding: 40px 0;
   --nav-height: 64px;
+
+  /* Border */
+  --border-radius-s: 8px;
+  --border-radius-m: 16px;
+  --border-radius-l: 40px;
+  --border-radius-pill: 60px;
+  --border-width: 2px;
+  --border-color: #E0E0E0;
+
+  /* Shadows */
+  --shadow-s: 0 5px 10px rgb(0 0 0 / 15%);
+  --shadow-m: 0 8px 20px rgb(0 0 0 / 10%);
+  --shadow-l: 0 12px 40px rgb(0 0 0 / 15%);
+
+  /* Transitions */
+  --transition-default: 0.3s ease;
+  --transition-fast: 0.15s ease-in-out;
+
+  /* Block-compatibility aliases */
+  --color-white: #FFF;
+  --color-gray-100: #F8F8F8;
+  --color-gray-200: #E0E0E0;
+  --color-gray-600: #696969;
+  --color-cta: #0050FF;
+  --background-color: var(--color-background);
+  --light-color: var(--color-background-light);
+  --dark-color: var(--color-secondary);
+  --text-color: var(--color-text);
+  --link-color: var(--color-link);
+  --link-hover-color: var(--color-link-hover);
+  --body-font-family: var(--font-family-body);
+  --heading-font-family: var(--font-family-heading);
+  --body-font-size-m: var(--font-size-m);
+  --body-font-size-s: var(--font-size-s);
+  --body-font-size-xs: var(--font-size-xs);
+  --heading-font-size-xxl: var(--font-size-xxxl);
+  --heading-font-size-xl: var(--font-size-xxl);
+  --heading-font-size-l: var(--font-size-xl);
+  --heading-font-size-m: var(--font-size-l);
+  --heading-font-size-s: var(--font-size-m);
+  --heading-font-size-xs: var(--font-size-s);
+  --max-width: var(--grid-max-width);
+  --spacing-sm: var(--spacing-s);
+  --spacing-md: var(--spacing-m);
+  --spacing-lg: var(--spacing-l);
 }
 
-/* fallback fonts */
+/* System fallback font */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
+  font-family: onair-fallback;
+  size-adjust: 99.5%;
   src: local('Arial');
 }
 
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
-}
+/* === BASE RESETS === */
 
-@media (width >= 900px) {
-  :root {
-    /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
-
-    /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
-  }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
   display: none;
   margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-default);
 }
 
 body.appear {
   display: block;
 }
+
+/* === HEADER === */
 
 header {
   height: var(--nav-height);
@@ -98,6 +155,8 @@ footer .footer[data-block-status="loaded"] {
   visibility: visible;
 }
 
+/* === TYPOGRAPHY === */
+
 h1,
 h2,
 h3,
@@ -106,20 +165,64 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
+  scroll-margin: calc(var(--nav-height) + 16px);
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 {
+  font-family: 'On Air', OnAir-Regular, Arial, sans-serif;
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.14;
+  color: var(--color-text-inverted);
+}
 
-p,
+h2 {
+  font-family: 'On Air', OnAir-Black, Arial, sans-serif;
+  font-size: var(--font-size-xxxl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
+  color: var(--color-secondary);
+}
+
+h3 {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.375;
+  color: var(--color-secondary);
+}
+
+h4 {
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.3;
+  color: var(--color-text-light);
+}
+
+h5 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
+  color: var(--color-text-inverted);
+}
+
+h6 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: var(--font-size-m);
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
 dl,
 ol,
 ul,
@@ -131,84 +234,127 @@ blockquote {
 
 code,
 pre {
-  font-size: var(--body-font-size-s);
+  font-size: var(--font-size-s);
 }
 
 pre {
-  padding: 16px;
-  border-radius: 8px;
-  background-color: var(--light-color);
+  padding: var(--spacing-m);
+  border-radius: var(--border-radius-s);
+  background-color: var(--color-background-light);
   overflow-x: auto;
   white-space: pre;
 }
 
-main > div {
-  margin: 40px 16px;
-}
+/* === LINKS === */
 
-input,
-textarea,
-select,
-button {
-  font: inherit;
-}
-
-/* links */
 a:any-link {
-  color: var(--link-color);
+  color: var(--color-link);
   text-decoration: none;
   overflow-wrap: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
+  color: var(--color-link-hover);
   text-decoration: underline;
 }
 
-/* buttons */
+/* === BUTTONS === */
+
 a.button:any-link,
 button {
-  box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
-  margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
+  margin: var(--spacing-s) 0;
+  border: 0;
+  border-radius: var(--border-radius-pill);
+  padding: 12px 16px;
+  font-family: 'On Air', OnAir-Regular, Arial, sans-serif;
+  font-size: var(--font-size-m);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--font-weight-regular);
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverted);
   cursor: pointer;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--color-primary-dark);
   cursor: pointer;
+  text-decoration: none;
 }
 
 button:disabled,
 button:disabled:hover {
-  background-color: var(--light-color);
+  background-color: var(--color-background-light);
+  color: var(--color-text-light);
   cursor: unset;
 }
 
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  background-color: transparent;
+  border: var(--border-width) solid var(--color-text-inverted);
+  color: var(--color-primary);
 }
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: var(--color-background-light);
+}
+
+a.button.accent,
+button.accent {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+}
+
+a.button.large,
+button.large {
+  padding: 10px 24px;
+}
+
+/* === FORM ELEMENTS === */
+
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px var(--spacing-m);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-s);
+  font-size: var(--font-size-m);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  transition: border-color var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* === IMAGES === */
 
 main img {
   max-width: 100%;
@@ -227,31 +373,81 @@ main img {
   width: 100%;
 }
 
+/* === LAYOUT === */
+
+main > div {
+  margin: var(--spacing-xl) var(--spacing-m);
+}
+
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 0;
+  padding: var(--section-padding);
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--grid-max-width);
   margin: auto;
-  padding: 0 24px;
+  padding: 0 var(--grid-gutter);
 }
 
 main > .section:first-of-type {
   margin-top: 0;
-}
-
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
+  padding-top: 0;
 }
 
 /* section metadata */
 main .section.light,
 main .section.highlight {
-  background-color: var(--light-color);
-  margin: 0;
-  padding: 40px 0;
+  background-color: var(--color-background-light);
+}
+
+main .section.dark {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-inverted);
+}
+
+main .section.dark a:any-link {
+  color: var(--color-text-inverted);
+}
+
+main .section.alt {
+  background-color: var(--color-background-alt);
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+
+@media (width >= 600px) {
+  :root {
+    --font-size-xxl: 32px;
+  }
+
+  main > .section > div {
+    padding: 0 var(--spacing-l);
+  }
+}
+
+@media (width >= 900px) {
+  :root {
+    --font-size-xxl: 36px;
+    --font-size-xxxl: 48px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media (width >= 1200px) {
+  :root {
+    --font-size-xxxl: 56px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  main > .section > div {
+    padding: 0 32px;
+  }
 }

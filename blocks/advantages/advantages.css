@@ -1,0 +1,57 @@
+.advantages .advantages-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-md);
+}
+
+.advantages .advantages-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+}
+
+.advantages .advantages-item-icon {
+  flex: 0 0 auto;
+}
+
+.advantages .advantages-item-icon .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.advantages .advantages-item-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.advantages .advantages-item-text h3,
+.advantages .advantages-item-text h4 {
+  font-size: var(--body-font-size-m);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 0;
+  margin-bottom: var(--spacing-xs);
+}
+
+.advantages .advantages-item-text p {
+  font-size: var(--body-font-size-s);
+  color: var(--color-gray-600);
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (width >= 768px) {
+  .advantages .advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 1024px) {
+  .advantages .advantages-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
