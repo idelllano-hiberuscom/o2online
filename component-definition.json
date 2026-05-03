@@ -105,6 +105,7 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
+                  "name": "Features Item",
                   "model": "features-item"
                 }
               }
@@ -149,6 +150,7 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
+                  "name": "Pricing Card Item",
                   "model": "pricing-card-item"
                 }
               }
@@ -193,6 +195,7 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
+                  "name": "Promo Card Item",
                   "model": "promo-card-item"
                 }
               }
