@@ -11,33 +11,8 @@
       "text",
       "image",
       "button",
-      "title",
-      "hero",
-      "pricing-cards",
-      "promo-banner",
-      "features",
-      "promo-cards",
-      "cards",
-      "columns",
-      "fragment"
-    ]
-  },
-  {
-    "id": "features",
-    "components": [
-      "features-item"
-    ]
-  },
-  {
-    "id": "pricing-cards",
-    "components": [
-      "pricing-card-item"
-    ]
-  },
-  {
-    "id": "promo-cards",
-    "components": [
-      "promo-card-item"
+      "title"
     ]
   }
+  
 ]
