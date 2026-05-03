@@ -54,7 +54,14 @@
         "promo-cards",
         "cards",
         "columns",
-        "fragment"
+        "fragment",
+        "tariff-cards",
+        "coverage-banner",
+        "discover-grid",
+        "features",
+        "app-promo",
+        "advantages",
+        "contact-strip"
       ]
     }
   ]

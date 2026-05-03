@@ -140,5 +140,213 @@
         ]
       }
     ]
+  },
+  {
+    "id": "advantages-item",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "icon",
+        "label": "Icon",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description"
+      }
+    ]
+  },
+  {
+    "id": "app-promo",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description"
+      },
+      {
+        "component": "aem-content",
+        "name": "appStoreLink",
+        "label": "App Store Link",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "playStoreLink",
+        "label": "Play Store Link",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "App Image",
+        "valueType": "string",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "contact-strip",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Text"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "Contact Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "coverage-banner",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Banner Text"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "discover-grid-item",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "image",
+        "label": "Card Image",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "name": "description",
+        "label": "Description"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Card Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "features-item",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "icon",
+        "label": "Icon",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description"
+      }
+    ]
+  },
+  {
+    "id": "hero",
+    "fields": [
+      {
+        "component": "reference",
+        "name": "backgroundImage",
+        "label": "Background Image",
+        "valueType": "string",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtitle"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaLink",
+        "label": "CTA Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "tariff-cards-item",
+    "fields": [
+      {
+        "component": "text",
+        "name": "planName",
+        "label": "Plan Name"
+      },
+      {
+        "component": "text",
+        "name": "speed",
+        "label": "Speed (e.g. 600MB)"
+      },
+      {
+        "component": "text",
+        "name": "data",
+        "label": "Data (e.g. 60GB)"
+      },
+      {
+        "component": "text",
+        "name": "price",
+        "label": "Price (e.g. 35)"
+      },
+      {
+        "component": "text",
+        "name": "priceLabel",
+        "label": "Price Label (e.g. €/mes)"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaPrimary",
+        "label": "Primary CTA",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "ctaSecondary",
+        "label": "Secondary CTA",
+        "valueType": "string"
+      }
+    ]
   }
 ]

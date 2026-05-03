@@ -1,0 +1,57 @@
+{
+  "definitions": [
+    {
+      "title": "App Promo",
+      "id": "app-promo",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "App Promo",
+              "model": "app-promo"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "item-definitions": [],
+  "models": [
+    {
+      "id": "app-promo",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Description"
+        },
+        {
+          "component": "aem-content",
+          "name": "appStoreLink",
+          "label": "App Store Link",
+          "valueType": "string"
+        },
+        {
+          "component": "aem-content",
+          "name": "playStoreLink",
+          "label": "Play Store Link",
+          "valueType": "string"
+        },
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "App Image",
+          "valueType": "string",
+          "multi": false
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
