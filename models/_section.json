@@ -48,6 +48,10 @@
         "button",
         "title",
         "hero",
+        "pricing-cards",
+        "promo-banner",
+        "features",
+        "promo-cards",
         "cards",
         "columns",
         "fragment"
