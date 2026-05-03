@@ -41,12 +41,6 @@
   filter: brightness(0) invert(1);
 }
 
-.promo-banner .promo-banner-icon img {
-  width: 40px;
-  height: 40px;
-  filter: brightness(0) invert(1);
-}
-
 .promo-banner .promo-banner-text {
   flex: 1;
   min-width: 200px;

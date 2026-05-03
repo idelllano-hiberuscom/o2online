@@ -16,7 +16,7 @@
 .pricing-cards .pricing-card {
   background: var(--color-white, #fff);
   border-radius: var(--border-radius-card, 20px);
-  box-shadow: var(--shadow-card, 0 2px 20px rgba(0, 0, 0, 0.08));
+  box-shadow: var(--shadow-card, 0 2px 20px rgb(0 0 0 / 8%));
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .pricing-cards .pricing-card:hover {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 12%);
 }
 
 .pricing-cards .pricing-card-top {
@@ -83,7 +83,7 @@
   margin: 4px 0 0;
 }
 
-.pricing-cards .pricing-card-price p:last-child:not(:first-child):not(:nth-child(2)) {
+.pricing-cards .pricing-card-price p:last-child:not(:first-child, :nth-child(2)) {
   font-size: 12px;
   font-weight: var(--font-weight-regular, 400);
   color: var(--color-text-muted, #666);
