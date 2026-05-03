@@ -1,8 +1,8 @@
 {
   "mappings": [
-    "/content/aem-boilerplate/:/"
+    "/content/o2online/:/"
   ],
   "includes": [
-    "/content/aem-boilerplate/"
+    "/content/o2online/"
   ]
 }
