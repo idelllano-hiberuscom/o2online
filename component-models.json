@@ -142,10 +142,6 @@
     ]
   },
   {
-    "id": "features",
-    "fields": []
-  },
-  {
     "id": "features-item",
     "fields": [
       {
@@ -202,10 +198,6 @@
         "valueType": "string"
       }
     ]
-  },
-  {
-    "id": "pricing-cards",
-    "fields": []
   },
   {
     "id": "pricing-card-item",
@@ -282,10 +274,6 @@
         "valueType": "string"
       }
     ]
-  },
-  {
-    "id": "promo-cards",
-    "fields": []
   },
   {
     "id": "promo-card-item",
